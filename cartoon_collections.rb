@@ -18,9 +18,11 @@ end
 
 def find_the_cheese(food)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if food.include?(cheese_types.each{|item|
+  counter
+  if food.include?(cheese_types.each_with_index{|item, index|
+    counter = index
     })
-    item
+
   else
     nil
   end

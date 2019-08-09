@@ -21,8 +21,8 @@ def find_the_cheese(food)
   i = 0
   cheese_found = []
   while i < cheese_types.length
-  if food.include?(item)
-      cheese_found << yield(item)
+    if food.include?(cheese_types[i]
+      cheese_found << cheese_types[i]
     else
       nil
     end

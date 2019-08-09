@@ -21,7 +21,7 @@ def find_the_cheese(food)
   i = 0
   while i < cheese_types.length
     if food.include?(cheese_types[i])
-      return cheese_type[i]
+      return cheese_types[i]
     else
       i += 1
     end

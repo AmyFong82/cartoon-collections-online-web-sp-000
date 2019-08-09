@@ -24,13 +24,9 @@ def find_the_cheese(food)
     if food.include?(cheese_types[i]
       cheese_found << cheese_types[i]
     else
-      nil
+      i += 1
     end
-  }
-  cheese_found
-else
-  nil
-end
+    cheese_found  
 end
 
 snacks = ["crackers", "gouda", "thyme"]

@@ -22,6 +22,7 @@ def find_the_cheese(food)
   cheese_types.each_with_index{|item, index|
     if food.include?(item)
     return item
+  }
   else
     nil
   end

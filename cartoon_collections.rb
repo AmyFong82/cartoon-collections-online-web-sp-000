@@ -26,8 +26,8 @@ def find_the_cheese(food)
     else
       i += 1
     end
-    cheese_found
   end
+  cheese_found
 end
 
 snacks = ["crackers", "gouda", "thyme"]

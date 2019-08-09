@@ -23,7 +23,7 @@ def find_the_cheese(food)
   while i < cheese_types.length
     if food.include?(cheese_types[i])
       cheese_found << cheese_types[i]
-      return cheese_found
+      return cheese_found.to_s
     else
       i += 1
     end

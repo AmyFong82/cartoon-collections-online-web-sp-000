@@ -18,12 +18,15 @@ end
 
 def find_the_cheese(food)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0
   cheese_found = []
-  while i < cheese_types.length
-    food.include?(cheese_types[i]) ? cheese_found << cheese_types[i] : i += 1
-  end
+  cheese_types.each {|item|
+    if food.include?(item)
+      cheese_found << yield(item)
+  }
   cheese_found
+else
+  nil
+end
 end
 
 snacks = ["crackers", "gouda", "thyme"]

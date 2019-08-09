@@ -21,8 +21,9 @@ def find_the_cheese(food)
   i = 0
   cheese_found = []
   while i < cheese_types.length
-    food.include?(cheese_types[i]) ? cheese_founf << cheese_types[i] : i += 1
+    food.include?(cheese_types[i]) ? cheese_found << cheese_types[i] : i += 1
   end
+  cheese_found
 end
 
 snacks = ["crackers", "gouda", "thyme"]

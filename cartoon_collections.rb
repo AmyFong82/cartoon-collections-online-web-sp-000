@@ -28,5 +28,3 @@ def find_the_cheese(food)
   end
   nil
 end
-
-snacks = ["crackers", "gouda", "thyme"]
